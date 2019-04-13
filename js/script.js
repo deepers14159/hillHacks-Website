@@ -19,7 +19,8 @@ $(document).ready(function() {
     }, 500);
   });
     document.getElementById("register_button").onclick = function(event){
-        window.alert("This function has yet to be added!");
+		window.open('https://docs.google.com/forms/d/e/1FAIpQLSc6D_04QPiWqdkqmXPbfJPULH9mucbqXhMtVrqCazGQ5hON5w/viewform?vc=0&c=0&w=1', '_blank');
+        //window.alert("This function has yet to be added!");
     }
   function updateSlide(){
     if ($(window).width() > 768) {
