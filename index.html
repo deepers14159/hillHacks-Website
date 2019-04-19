@@ -1,156 +1,294 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hillsHacks</title>
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <style>a[href*="000webhost"]{display:none;}</style>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hillsHacks</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>a[href*="000webhost"]{display:none;}</style>
 </head>
 <body>
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark darkgray">
-    <a class="navbar-brand icon smoothScroll" href="#home">
-      <img src="WH_Mascot.gif" width="30" height="30" alt="WH Mascot">
-    </a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="icon-bar top-bar"></span>
-      <span class="icon-bar middle-bar"></span>
-      <span class="icon-bar bottom-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item one">
-          <a class="nav-link smoothScroll" href="#about">About</a>
-        </li>
-        <li class="nav-item two">
-          <a class="nav-link smoothScroll" href="#register">Register</a>
-        </li>
-        <li class="nav-item three">
-          <a class="nav-link smoothScroll" href="#FAQ">FAQ</a>
-        </li>
-        <li class="nav-item four">
-          <a class="nav-link smoothScroll" href="#contactUs">Contact Us</a>
-        </li>
-        <li class="nav-item five">
-          <a class="nav-link smoothScroll" href="#schedule">Schedule</a>
-        </li>
-        <hr class="slide">
-      </ul>
-    </div>
-  </nav>
-  <a name="home"></a>
-  <div class="container-fluid home deadCenter darkgray alignCenter">
-    <img class="logo" src="hillsHacksLogo extended without date.png" alt="hillsHacks Logo">
-    <br/>
-    <br/>
-    <br/>
-    <a href="#register" class="smoothScroll"><button type="button" class="btn btn-lg gold">Register Now!</button></a>
-  </div>
-  <div class="container-fluid">
-    <a class="anchor first"  name="about"></a>
-    <div class="row justify-content-center">
-      <div class="col-md-4 deadCenter text">
-        <img class="img-fluid" src="hillshacks circuit 1.png" width="350">
-      </div>
-      <div class="col-md-6 text">
-        <h1 class="display-4 alignCenter adjustLeft">About</h1>
-        <p>hillsHacks is the second annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
-        <p>Throughout the afternoon, beginners and experts alike can explore computer science through demos, talks, and workshops.  Learn how computer science is being applied to space exploration and medicine! Learn the basics of Python or JavaScript! Learn about the development process as high school students showcase their projects! <b>No prior experience is required.</b></p>
-        <p>Since the theme for hillsHacks 2019 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
-        <p>The event will take place <b>Sunday May 19th, from 11:00 am to 6:00 pm</b>.</p>
-      </div>
-    </div>
-    <a class="anchor second" name="register"></a>
-    <div class="row justify-content-center gray">
-      <div class="col-md-6 text">
-        <h1 class="display-4 alignCenter adjustLeft">Register</h1>
-        <br/>
-        <p>An admission fee of $20 is needed to cover the costs of food, prizes, and SWAG bag. In order to attend, <b>online registration and payment must be completed by 9:00 pm 5/1</b>.</p>
-        <!--<font color="red">Sign ups will close May 1st!</font>-->
-        <div class="alignCenter">
-            <br/>
-            <button type="button" class="btn btn-lg gold" id = "register_button">Sign Up!</button>
-        </div>
-      </div>
-      <div class="col-md-4 deadCenter text">
-        <img class="img-fluid" src="hillshacks circuit 2.png" width="150">
-      </div>
-    </div>
-    <a class="anchor third" name="FAQ"></a>
-    <div class="row justify-content-center">
-      <div class="col-md-10 text">
-        <h1 class="display-4 alignCenter">FAQ</h1>
-        <h4>Why come to hillsHacks?</h4>
-        <p>Computer science is on the path to near ubiquity worldwide and attending hackathons are a great way to develop your knowledge in coding. Regardless of your experience, you will learn something new at hillsHacks. All students grade 6 and up are welcome.</p>
-        <h4>What if I don’t know anything about coding or computer science?</h4>
-        <p>hillsHacks is your opportunity to learn!</p>
-        <h4>I’m an expert at coding. What do I get out of this event?</h4>
-        <p>As the first high school hackathon with a theme of educational technology, you’ll have the unique opportunity to apply your skills and create something that can help improve classrooms, possibly winning prizes as well. Also, by being with other people interested in computer science, you are bound to learn something new.</p>
-        <h4>This sounds like a long day, will there be food?</h4>
-        <p>Of course! All participants will be given lunch and dinner. Snacks will also be available throughout the day.</p>
-        <h4>Do I need to bring my own computer?</h4>
-        <p>We do recommend that you bring your own computer, but we are trying to get school chromebooks for everyone to use. We will let you know.</p>
-        <h4>Sounds great! Where is it?</h4>
-        <p>It's at Watchung Hills Regional High School, which is at
-        <a href="https://www.google.com/maps/place/108+Stirling+Rd,+Warren,+NJ+07059/">108 Stirling Rd, Warren, NJ 07059</a>. You should enter through the main entrance at the front of the school.</p>
-      </div>
-    </div>
-    <a class="anchor fourth" name="contactUs"></a>
-    <div class="row justify-content-center gray">
-      <div class="col-md-10 text">
-        <h1 class="display-4 alignCenter">Contact Us</h1>
-        <p align="center">If you have any questions or concerns, please contact Mr.Twisler at <b><a href="mailto:dtwisler@whrhs.org">dtwisler@whrhs.org</a></b></p>
-      </div>
-    </div>
-    <a class="anchor fifth" name="schedule"></a>
-    <div class="row justify-content-center">
-      <div class="col-md-10 text">
-        <h1 class="display-4 alignCenter">Schedule</h1>
-           <div class="row justify-content-center">
-              <div class="col-md-10 text">
-                <h4> Structure of the Day </h4>
-                <!-- <p>There are two main components to the event: free coding time and workshops. At any point throughout the day, groups can work on programming their own project or developing an idea and plan for a programming project, which can then be judged at the end and possibly be awarded prizes. This hackathon is themed around educational technology, so projects should focus on how technology can improve education. Occurring at the same time are workshops, which you can attend to learn more about some topic in computer science, including learning how to program if you don’t know how.</p>
-                <p>You can choose to allocate your time however you wish, whether it is competing, learning, or just tinkering around with something. Often, there will be multiple workshops happening at the same time; there is a schedule below listing all of the workshops, and includes a brief description of each, as well as a guide for how to spend the day depending on your experience with programming. Also below is a diagram for you to visualize the entire schedule.</p>
-                <p>Note that there are a few general events that everyone attends at the same time, listed below</p> -->
-                <p>To be updated.</p>
-              </div>
-          </div>
-          <!--<div class="alignCenter">
-             <h4> General Events </h4>
-             <img class="img-fluid" src="general events.png" width="400"> <br/>
-             <br/>
-             <br/>
-             <h4> Workshop Schedule </h4>
-             <img class="img-fluid" src="workshop 1.png" width="400"> <br/>
-             <img class="img-fluid" src="workshop2.png" width="400">
-             <br/>
-             <br/>
-             <h4> Pathways </h4> 
-             <p>These are suggestions (not mandatory at all) of how to navigate the day</p>
-             <img class="img-fluid" src="pathways.png" width="400"> <br/>
-             <br/>
-             <br/>
-             <h4> Schedule Visualization </h4>
-             <img class="img-fluid" src="hillshacks schedule.png" width="1000">
-          </div>-->
-      </div>
-    </div>
-    <div class="row footer justify-content-center darkgray">
-      <div class="col-md-10 text whiteText alignCenter">
-        <p>&#169; Copyright 2019 Watchung Hills Regional High School Computer Science Club</p>
-      </div>
-    </div>
-  </div>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
+	<nav class="navbar fixed-top navbar-expand-md navbar-dark darkgray">
+		<a class="navbar-brand icon smoothScroll" href="#home">
+			<img src="img/WH_Mascot.gif" width="30" height="30" alt="WH Mascot">
+		</a>
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="icon-bar top-bar"></span>
+			<span class="icon-bar middle-bar"></span>
+			<span class="icon-bar bottom-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item one">
+					<a class="nav-link smoothScroll" href="#about">About</a>
+				</li>
+				<li class="nav-item two">
+					<a class="nav-link smoothScroll" href="#register">Register</a>
+				</li>
+				<li class="nav-item three">
+					<a class="nav-link smoothScroll" href="#FAQ">FAQ</a>
+				</li>
+				<li class="nav-item four">
+					<a class="nav-link smoothScroll" href="#contactUs">Contact Us</a>
+				</li>
+				<li class="nav-item five">
+					<a class="nav-link smoothScroll" href="#schedule">Schedule</a>
+				</li>
+				<hr class="slide">
+			</ul>
+		</div>
+	</nav>
+	<a name="home"></a>
+	<div class="container-fluid home deadCenter darkgray alignCenter">
+		<img class="logo" src="img/hillsHacksLogo extended without date.png" alt="hillsHacks Logo">
+		<br/>
+		<br/>
+		<br/>
+		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-lg gold">Register Now!</button></a>
+	</div>
+	<div class="container-fluid">
+		<a class="anchor first"  name="about"></a>
+		<div class="row justify-content-center">
+			<div class="col-md-4 deadCenter text">
+				<img class="img-fluid" src="img/hillshacks circuit 1.png" width="350">
+			</div>
+			<div class="col-md-6 text">
+				<h1 class="display-4 alignCenter adjustLeft">About</h1>
+				<p>hillsHacks is the second annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
+				<p>Throughout the afternoon, beginners and experts alike can explore computer science through demos, talks, and workshops.  Learn how computer science is being applied to space exploration and medicine! Learn the basics of Python or JavaScript! Learn about the development process as high school students showcase their projects! <b>No prior experience is required.</b></p>
+				<p>Since the theme for hillsHacks 2019 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
+				<p>The event will take place <b>Sunday May 19th, from 11:00 am to 6:00 pm</b>.</p>
+			</div>
+		</div>
+		<a class="anchor second" name="register"></a>
+		<div class="row justify-content-center gray">
+			<div class="col-md-6 text">
+				<h1 class="display-4 alignCenter adjustLeft">Register</h1>
+				<br/>
+				<p>An admission fee of $20 is needed to cover the costs of food, prizes, and SWAG bag. In order to attend, <b>online registration and payment must be completed by 9:00 pm 5/1</b>.</p>
+				<!--<font color="red">Sign ups will close May 1st!</font>-->
+				<div class="alignCenter">
+						<br/>
+						<button type="button" class="btn btn-lg gold" id = "register_button">Sign Up!</button>
+				</div>
+			</div>
+			<div class="col-md-4 deadCenter text">
+				<img class="img-fluid" src="img/hillshacks circuit 2.png" width="150">
+			</div>
+		</div>
+		<a class="anchor third" name="FAQ"></a>
+		<div class="row justify-content-center">
+			<div class="col-md-10 text">
+				<h1 class="display-4 alignCenter">FAQ</h1>
+				<h4>Why come to hillsHacks?</h4>
+				<p>Computer science is on the path to near ubiquity worldwide and attending hackathons are a great way to develop your knowledge in coding. Regardless of your experience, you will learn something new at hillsHacks. All students grade 6 and up are welcome.</p>
+				<h4>What if I don’t know anything about coding or computer science?</h4>
+				<p>hillsHacks is your opportunity to learn!</p>
+				<h4>I’m an expert at coding. What do I get out of this event?</h4>
+				<p>As the first high school hackathon with a theme of educational technology, you’ll have the unique opportunity to apply your skills and create something that can help improve classrooms, possibly winning prizes as well. Also, by being with other people interested in computer science, you are bound to learn something new.</p>
+				<h4>This sounds like a long day, will there be food?</h4>
+				<p>Of course! All participants will be given lunch and dinner. Snacks will also be available throughout the day.</p>
+				<h4>Do I need to bring my own computer?</h4>
+				<p>We do recommend that you bring your own computer, but we are trying to get school chromebooks for everyone to use. We will let you know.</p>
+				<h4>Sounds great! Where is it?</h4>
+				<p>It's at Watchung Hills Regional High School, which is at
+				<a href="https://www.google.com/maps/place/108+Stirling+Rd,+Warren,+NJ+07059/">108 Stirling Rd, Warren, NJ 07059</a>. You should enter through the main entrance at the front of the school.</p>
+			</div>
+		</div>
+		<a class="anchor fourth" name="contactUs"></a>
+		<div class="row justify-content-center gray">
+			<div class="col-md-10 text">
+				<h1 class="display-4 alignCenter">Contact Us</h1>
+				<p align="center">If you have any questions or concerns, please contact Mr. Twisler at <b><a href="mailto:dtwisler@whrhs.org">dtwisler@whrhs.org</a></b></p>
+			</div>
+		</div>
+		<a class="anchor fifth" name="schedule"></a>
+		<div class="row justify-content-center">
+			<div class="col-md-10 text">
+				<h1 class="display-4 alignCenter">Schedule</h1>
+				<div class="row justify-content-center">
+					<div class="col-md-10 text">
+						<h4> Structure of the Day </h4>
+						<p>
+							There are two main components to the event: free coding time and workshops.
+							At any point throughout the day, groups can work on programming their own project
+							or developing an idea and plan for a programming project, which can then be judged
+							at the end and possibly be awarded prizes. This hackathon is themed around educational
+							technology, so projects should focus on how technology can improve education.
+							Occurring at the same time are workshops, which you can attend to learn more about
+							some topic in computer science, including learning how to program if you don’t know how.
+						</p>
+						<p>
+							You can choose to allocate your time however you wish, whether it is competing,
+							learning, or just tinkering around with something. Often, there will be multiple
+							workshops happening at the same time; there is a schedule below listing all of the
+							workshops, and includes a brief description of each, as well as a guide for how to
+							spend the day depending on your experience with programming. Also below is a diagram
+							for you to visualize the entire schedule.
+						</p>
+						<p>Note that there are a few general events that everyone attends at the same time, listed below</p>
+						<p>To be updated.</p>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-bordered" id="schedule">
+							<thead>
+								<th class="gold">11:00</th>
+								<th class="gold">11:30</th>
+								<th class="gold">12:00</th>
+								<th class="gold">12:30</th>
+								<th class="gold">1:00</th>
+								<th class="gold">1:30</th>
+								<th class="gold">2:00</th>
+								<th class="gold">2:30</th>
+								<th class="gold">3:00</th>
+								<th class="gold">3:30</th>
+								<th class="gold">4:00</th>
+								<th class="gold">4:30</th>
+								<th class="gold">5:00</th>
+								<th class="gold">5:30</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="p-0 text-center" data-toggle="modal" data-target="#exampleModal">
+										<div class="card-header">Beginner</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Intermediate</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Break</div>
+										<div class="h4 card-body">Lunch Break</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Break</div>
+										<div class="h4 card-body">Lunch Break</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Advanced</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Beginner</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Intermediate</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Advanced</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Beginner</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Intermediate</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Advanced</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Beginner</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Intermediate</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Advanced</div>
+										<div class="h4 card-body">Learn to Code in Python!</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="p-0 text-center">
+										<div class="card-header">Advanced</div>
+										<div class="h4 card-body">Learn F#!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Pro</div>
+										<div class="h4 card-body">Learn CoffeeScript!</div>
+									</td>
+									<td></td>
+									<td></td>
+									<td class="p-0 text-center" colspan="3">
+										<div class="card-header">Next Lvl</div>
+										<div class="h4 card-body">Learn Whitespace!</div>
+									</td>
+									<td class="p-0 text-center">
+										<div class="card-header">Fun</div>
+										<div class="h4 card-body">Make Games!</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<!-- Modals – These are the popup windows to describe the workshops -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Intro to Python</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							In this course you will learn the fundamentals of programming in Python.
+							You will learn various topics such as how to declare variables and construct functions.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn gold" data-dismiss="modal">Close</button>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<!--<div class="alignCenter">
+						<h4> General Events </h4>
+						<img class="img-fluid" src="img/general events.png" width="400"> <br/>
+						<br/>
+						<br/>
+						<h4> Workshop Schedule </h4>
+						<img class="img-fluid" src="img/workshop 1.png" width="400"> <br/>
+						<img class="img-fluid" src="img/workshop2.png" width="400">
+						<br/>
+						<br/>
+						<h4> Pathways </h4> 
+						<p>These are suggestions (not mandatory at all) of how to navigate the day</p>
+						<img class="img-fluid" src="img/pathways.png" width="400"> <br/>
+						<br/>
+						<br/>
+						<h4> Schedule Visualization </h4>
+						<img class="img-fluid" src="img/hillshacks schedule.png" width="1000">
+				</div>-->
+			</div>
+		</div>
+		<div class="row footer justify-content-center darkgray">
+			<div class="col-md-10 text whiteText alignCenter">
+				<p>&#169; Copyright 2019 Watchung Hills Regional High School Computer Science Club</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </body>
 </html>
 <!--2019 changes by Jagdeep Bhatia -->

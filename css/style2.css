@@ -1,174 +1,198 @@
 @charset "utf-8";
 
 .icon {
-  position: absolute;
-  left:50%;
-  margin-left:-15px;
-  top: 8px;
+	position: absolute;
+	left:50%;
+	margin-left:-15px;
+	top: 8px;
 }
 
 label {
-  color: white;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#register_button:hover {
+	box-shadow: 1px 1px 5px #888;
+}
+#register_button:active {
+	box-shadow: none;
 }
 
 .logo {
-  width: 75%;
-  height: auto;
-  max-width: 800px;
+	width: 75%;
+	height: auto;
+	max-width: 800px;
 }
 
 .home {
-  height: 100vh;
+	height: 100vh;
 }
 
 .deadCenter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .gray {
-  background-color: #F5F5F5;
+	background-color: #F5F5F5;
 }
 
 .darkgray {
-  background-color: #242424;
+	background-color: #242424;
 }
 
 .gold {
-  background-color: #ffd700;
+	background-color: #ffd700;
 }
 
 .alignCenter {
-  text-align: center;
+	text-align: center;
 }
 
 .text {
-  margin-top: 25px;
-  margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .whiteText {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .anchor {
-  display: block;
-  position: relative;
-  top: -25px;
-  visibility: hidden;
+	display: block;
+	position: relative;
+	top: -25px;
+	visibility: hidden;
+}
+
+/* For fixed sized tables, uncomment the two commented lines below. Some errors may occur */
+#schedule {
+	/* table-layout: fixed; */
+}
+#schedule th {
+	/* width: 150px; */
+	border: none;
+}
+
+td[data-toggle="modal"] {
+	cursor: pointer;
 }
 
 .navbar-toggler {
-  height: 40px;
-  border: none !important;
-  background: transparent !important;
-  outline: none !important;
+	height: 40px;
+	border: none !important;
+	background: transparent !important;
+	outline: none !important;
 }
 
 .navbar-toggler .icon-bar {
-  width: 22px;
-  height: 2px;
-  display: block;
-  margin-top: 4px;
-  transition: all 0.2s;
-  background-color: #fff;
+	width: 22px;
+	height: 2px;
+	display: block;
+	margin-top: 4px;
+	transition: all 0.2s;
+	background-color: #fff;
 }
 .navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
 }
 .navbar-toggler .middle-bar {
-  opacity: 0;
+	opacity: 0;
 }
 .navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
 }
 .navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
+	transform: rotate(0);
 }
 .navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
+	opacity: 1;
 }
 .navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
+	transform: rotate(0);
 }
 
 @media (min-width: 768px) {
-  .icon {
-    left: 8px;
-    margin-left: 0px;
-  }
-  .navbar-nav {
-    position: relative;
-    width: 50%;
-    min-width: 600px;
-    display: inline-block;
-    float: none;
-  }
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
-  .navbar-nav>li {
-    width: 20%;
-  }
-  ul li {
-    display: inline;
-    text-align: center;
-  }
-  .one:hover~hr {
-    margin-left: 0%;
-  }
-  .two:hover~hr {
-    margin-left: 20%;
-  }
-  .three:hover~hr {
-    margin-left: 40%;
-  }
-  .four:hover~hr {
-    margin-left: 60%;
-  }
-  .five:hover~hr {
-    margin-left: 80%;
-  }
-  hr {
-    position: absolute;
-    height: 5px !important;
-    top: 27px;
-    left: 0px;
-    width: 20%;
-    min-width: 120px;
-    background: #ffd700;
-    border: none;
-    transition: .2s ease-in-out;
-    pointer-events: none;
-    display: none;
-  }
-  .about {
-    margin-left: 0%;
-  }
-  .register {
-    margin-left: 20%;
-  }
-  .FAQ {
-    margin-left: 40%;
-  }
-  .contactUs {
-    margin-left: 60%;
-  }
-  .schedule {
-    margin-left: 80%;
-  }
-  .adjustLeft {
-    text-align: left;
-  }
-  .text {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .anchor {
-    top: -50px;
-  }
+	.icon {
+		left: 8px;
+		margin-left: 0px;
+	}
+	.navbar-nav {
+		position: relative;
+		width: 50%;
+		min-width: 600px;
+		display: inline-block;
+		float: none;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+	.navbar-nav>li {
+		width: 20%;
+	}
+	ul li {
+		display: inline;
+		text-align: center;
+	}
+	.one:hover~hr {
+		margin-left: 0%;
+	}
+	.two:hover~hr {
+		margin-left: 20%;
+	}
+	.three:hover~hr {
+		margin-left: 40%;
+	}
+	.four:hover~hr {
+		margin-left: 60%;
+	}
+	.five:hover~hr {
+		margin-left: 80%;
+	}
+	hr {
+		position: absolute;
+		height: 5px !important;
+		top: 27px;
+		left: 0px;
+		width: 20%;
+		min-width: 120px;
+		background: #ffd700;
+		border: none;
+		transition: .2s ease-in-out;
+		pointer-events: none;
+		display: none;
+	}
+	.about {
+		margin-left: 0%;
+	}
+	.register {
+		margin-left: 20%;
+	}
+	.FAQ {
+		margin-left: 40%;
+	}
+	.contactUs {
+		margin-left: 60%;
+	}
+	.schedule {
+		margin-left: 80%;
+	}
+	.adjustLeft {
+		text-align: left;
+	}
+	.text {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.anchor {
+		top: -50px;
+	}
 }
