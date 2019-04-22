@@ -74,11 +74,13 @@ button:hover {
 /* For fixed sized tables, uncomment the two commented lines below. Some errors may occur */
 #schedule {
 	/* table-layout: fixed; */
+
 }
 #schedule th {
 	/* width: 150px; */
 	border: none;
 }
+
 
 td[data-toggle="modal"] {
 	cursor: pointer;
