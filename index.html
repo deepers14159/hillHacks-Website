@@ -18,6 +18,20 @@
     border-color: #FAD904 !important;
     color: black !important;
 }
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
+}
 	</style>
 </head>
 
@@ -55,8 +69,9 @@
 	<a name="home"></a>
 	<div class="container-fluid home deadCenter darkgray alignCenter">
 		<img class="logo" src="img/hillsHacksLogo extended without date.png" alt="hillsHacks Logo">
+	<!--	<h3 id="" class = "text-center text-white">Feb 23, 2020 at WHRHS</h3> -->
 		<br/>
-    <h2 id="" class = "text-center text-white">Taking place on Feb 23, 2020</h2>
+		<div id = "clock" class = "text-center text-white countdown"></div>
 		<br/>
 		<br/>
 		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg">Register Now!</button></a>
@@ -895,9 +910,12 @@
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
   <script>
     $(function () {
-    $('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
+		$('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
-        + 'Next event in %D Days%!d'));
+        + '<span class="h1 font-weight-bold">%D</span> Day'
+        + '<span class="h1 font-weight-bold">%H</span> Hr'
+        + '<span class="h1 font-weight-bold">%M</span> Min'
+        + '<span class="h1 font-weight-bold">%S</span> Sec'));
     });
 });
 </script>
