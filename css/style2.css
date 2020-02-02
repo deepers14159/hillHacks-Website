@@ -16,7 +16,7 @@ button:hover {
 }
 
 #register_button:hover {
-	box-shadow: 1px 1px 5px #888;
+	box-shadow: 0px 0px 5px #888;
 }
 #register_button:active {
 	box-shadow: none;
@@ -62,6 +62,14 @@ button:hover {
 
 .whiteText {
 	color: #ffffff;
+}
+
+a {
+  color:#e5c300 !important;
+  transition: color 0.5s;
+}
+a:hover {
+  color:#ccad00 !important;
 }
 
 .anchor {

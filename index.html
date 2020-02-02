@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hillsHacks</title>
 	<link rel="stylesheet" href="css/style2.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<style>a[href*="000webhost"]{display:none;}</style>
+	<style>
+		a[href*="000webhost"] {
+			display: none;
+		}
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #FAD904 !important;
+    border-color: #FAD904 !important;
+    color: black !important;
+}
+	</style>
 </head>
+
 <body>
 	<nav class="navbar fixed-top navbar-expand-md navbar-dark darkgray">
 		<a class="navbar-brand icon smoothScroll" href="#home">
@@ -46,9 +56,10 @@
 	<div class="container-fluid home deadCenter darkgray alignCenter">
 		<img class="logo" src="img/hillsHacksLogo extended without date.png" alt="hillsHacks Logo">
 		<br/>
+    <h2 id="" class = "text-center text-white">Taking place on Feb 23, 2020</h2>
 		<br/>
 		<br/>
-		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-lg gold">Register Now!</button></a>
+		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg">Register Now!</button></a>
 	</div>
 	<div class="container-fluid">
 		<a class="anchor first"  name="about"></a>
@@ -57,11 +68,11 @@
 				<img class="img-fluid" src="img/hillshacks circuit 1.png" width="350">
 			</div>
 			<div class="col-md-6 text">
-				<h1 class="display-4 alignCenter adjustLeft">About</h1>
-				<p>hillsHacks is the second annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
+				<h1 class="display-4 mb-4 alignCenter adjustLeft">About</h1>
+				<p>hillsHacks is the third annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
 				<p>Throughout the afternoon, beginners and experts alike can explore computer science through demos, talks, and workshops.  Learn how computer science is being applied to space exploration and medicine! Learn the basics of Python or JavaScript! Learn about the development process as high school students showcase their projects! <b>No prior experience is required.</b></p>
-				<p>Since the theme for hillsHacks 2019 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
-				<p>The event will take place <b>Sunday May 19th, from 11:00 am to 6:00 pm</b>.</p>
+				<p>Since the theme for hillsHacks 2020 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
+				<p>The 2020 event will take place on <b>Sunday February 23rd, from 11:00 am to 6:00 pm</b>.</p>
 			</div>
 		</div>
 		<a class="anchor second" name="register"></a>
@@ -874,16 +885,26 @@
 		</div>
 		<div class="row footer justify-content-center darkgray">
 			<div class="col-md-10 text whiteText alignCenter">
-				<p>&#169; Copyright 2019 Watchung Hills Regional High School Computer Science Club</p>
+				<p>&#169; Copyright 2020 Watchung Hills Regional High School Computer Science Club</p>
 			</div>
 		</div>
 	</div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/script.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+  <script>
+    $(function () {
+    $('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
+      var $this = $(this).html(event.strftime(''
+        + 'Next event in %D Days%!d'));
+    });
+});
+</script>
 	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 </body>
 </html>
 <!--2019 changes by Jagdeep Bhatia -->
+<!--2020 changes by Ronald Leung (hi!!)-->
