@@ -31,10 +31,27 @@ button:hover {
 .home {
 	height: 100vh;
 }
+.bg-image{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url('https://www.incimages.com/uploaded_files/image/970x450/getty_856794670_385651.jpg') center no-repeat;
+	background-size: cover;
+}
+.bg-image:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: .6; 
+}
 
 .deadCenter {
 	display: flex;
-	align-items: center;
+	align-items: center ;
 	justify-content: center;
 	flex-direction: column;
 }
@@ -211,4 +228,19 @@ td[data-toggle="modal"] {
 	.anchor {
 		top: -50px;
 	}
+}
+
+.countdown {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+
+.countdown span:first-of-type {
+    margin-left: 0;
 }

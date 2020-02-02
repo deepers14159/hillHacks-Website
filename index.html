@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/style2.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	
 	<style>
 		a[href*="000webhost"] {
 			display: none;
@@ -17,20 +19,6 @@
     background-color: #FAD904 !important;
     border-color: #FAD904 !important;
     color: black !important;
-}
-.countdown {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.countdown span {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    font-size: 3rem;
-    margin-left: 0.8rem;
-}
-
-.countdown span:first-of-type {
-    margin-left: 0;
 }
 	</style>
 </head>
@@ -67,24 +55,24 @@
 		</div>
 	</nav>
 	<a name="home"></a>
-	<div class="container-fluid home deadCenter darkgray alignCenter">
-		<img class="logo" src="img/hillsHacksLogo extended without date.png" alt="hillsHacks Logo">
+	<div class="container-fluid home deadCenter darkgray alignCenter" >
+		<img class="logo fadeIn animated wow" src="img/hillsHacksLogo extended without date.png"   alt="hillsHacks Logo">
 	<!--	<h3 id="" class = "text-center text-white">Feb 23, 2020 at WHRHS</h3> -->
 		<br/>
-		<div id = "clock" class = "text-center text-white countdown"></div>
+		<div id = "clock" class = "text-center text-white countdown fadeIn animated wow"></div>
 		<br/>
 		<br/>
-		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg">Register Now!</button></a>
+		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg swing animated wow">Register Now!</button></a>
 	</div>
-	<div class="container-fluid">
+	<div class="container">
 		<a class="anchor first"  name="about"></a>
 		<div class="row justify-content-center">
-			<div class="col-md-4 deadCenter text">
-				<img class="img-fluid" src="img/hillshacks circuit 1.png" width="350">
+			<div class="col-md-6 deadCenter text">
+				<img class="img-fluid fadeInUp zoomIn animated wow" src="img/hillshacks circuit 1.png" width="350">
 			</div>
-			<div class="col-md-6 text">
-				<h1 class="display-4 mb-4 alignCenter adjustLeft">About</h1>
-				<p>hillsHacks is the third annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
+			<div class="col-md-6 text fadeInUp animated wow">
+				<h1 class=" display-4 mb-4 alignCenter adjustLeft">About</h1>
+				<p >hillsHacks is the third annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
 				<p>Throughout the afternoon, beginners and experts alike can explore computer science through demos, talks, and workshops.  Learn how computer science is being applied to space exploration and medicine! Learn the basics of Python or JavaScript! Learn about the development process as high school students showcase their projects! <b>No prior experience is required.</b></p>
 				<p>Since the theme for hillsHacks 2020 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
 				<p>The 2020 event will take place on <b>Sunday February 23rd, from 11:00 am to 6:00 pm</b>.</p>
@@ -92,26 +80,26 @@
 		</div>
 		<a class="anchor second" name="register"></a>
 		<div class="row justify-content-center gray">
-			<div class="col-md-6 text">
-				<h1 class="display-4 alignCenter adjustLeft">Register</h1>
+			<div class="col-md-6 text fadeInUp animated wow">
+				<h1 class="display-4 alignCenter adjustLeft ">Register</h1>
 				<br/>
 				<p>An admission fee of $20 is needed to cover the costs of food, prizes, and t-shirt. In order to attend, please complete <b>online registration and payment by clicking below.</b></p>
 				<!--<font color="red">Sign ups will close May 1st!</font>-->
 				<div class="alignCenter">
 						<br/>
-						<button type="button" class="btn btn-lg gold" id = "register_button">Sign Up!</button>
+						<button type="button" class="btn btn-primary " id = "register_button">Sign Up!</button>
 				</div>
 				<br/>
 				<br/>
                 <p><i>If you are not redirected to the google form, you may need to clear cached images and files in your browsing data. If still unable to access the form, use this link to be able to access the form directly: </i><a href = "https://docs.google.com/forms/d/e/1FAIpQLSc6D_04QPiWqdkqmXPbfJPULH9mucbqXhMtVrqCazGQ5hON5w/viewform?vc=0&c=0&w=1">Hackathon Google Form</a></p>
 
 			</div>
-			<div class="col-md-4 deadCenter text">
+			<div class="col-md-6 deadCenter text fadeInUp animated wow zoomIn">
 				<img class="img-fluid" src="img/hillshacks circuit 2.png" width="150">
 			</div>
 		</div>
 		<a class="anchor third" name="FAQ"></a>
-		<div class="row justify-content-center">
+		<div class="row justify-content-center fadeInUp animated wow">
 			<div class="col-md-10 text">
 				<h1 class="display-4 alignCenter">FAQ</h1>
 				<h4>Why come to hillsHacks?</h4>
@@ -131,7 +119,7 @@
 		</div>
 		<a class="anchor fourth" name="contactUs"></a>
 		<div class="row justify-content-center gray">
-			<div class="col-md-10 text">
+			<div class="col-md-10 text fadeInUp animated wow">
 				<h1 class="display-4 alignCenter">Contact Us</h1>
 				<p align="center">If you have any questions or concerns, please contact</p>
 				<p align="center">Mr. Twisler at <b><a href="mailto:dtwisler@whrhs.org">dtwisler@whrhs.org</a></b>,
@@ -140,7 +128,7 @@
 			</div>
 		</div>
 		<a class="anchor fifth" name="schedule"></a>
-		<div class="row justify-content-center">
+		<div class="row justify-content-center fadeInUp animated wow">
 			<div class="col-md-10 text">
 				<h1 class="display-4 alignCenter">Schedule</h1>
 				<div class="row justify-content-center">
@@ -897,22 +885,26 @@
 						<img class="img-fluid" src="img/hillshacks schedule.png" width="1000">
 				</div>-->
 			</div>
-		</div>
-		<div class="row footer justify-content-center darkgray">
+		</div></div>
+		<div class="containter-fluid row footer justify-content-center darkgray">
 			<div class="col-md-10 text whiteText alignCenter">
 				<p>&#169; Copyright 2020 Watchung Hills Regional High School Computer Science Club</p>
 			</div>
 		</div>
-	</div>
+	
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/script.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+	new WOW().init();
+	</script>
   <script>
     $(function () {
 		$('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
       var $this = $(this).html(event.strftime(''
-        + '<span class="h1 font-weight-bold">%D</span> Day'
+        + '<span class="h1 font-weight-bold">%D</span> Days'
         + '<span class="h1 font-weight-bold">%H</span> Hr'
         + '<span class="h1 font-weight-bold">%M</span> Min'
         + '<span class="h1 font-weight-bold">%S</span> Sec'));
