@@ -153,6 +153,7 @@ td[data-toggle="modal"] {
 	transform: rotate(0);
 }
 
+
 @media (min-width: 768px) {
 	.icon {
 		left: 8px;
@@ -171,6 +172,7 @@ td[data-toggle="modal"] {
 	.navbar-nav>li {
 		width: 20%;
 	}
+
 	ul li {
 		display: inline;
 		text-align: center;

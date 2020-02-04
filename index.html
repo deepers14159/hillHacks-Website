@@ -7,19 +7,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>hillsHacks</title>
 	<link rel="stylesheet" href="css/style2.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	 crossorigin="anonymous">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-	
+
 	<style>
 		a[href*="000webhost"] {
 			display: none;
 		}
-    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #FAD904 !important;
-    border-color: #FAD904 !important;
-    color: black !important;
-}
+
+		.btn-primary,
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary:visited {
+			background-color: #FAD904 !important;
+			border-color: #FAD904 !important;
+			color: black !important;
+		}
 	</style>
 </head>
 
@@ -62,10 +67,10 @@
 		<div id = "clock" class = "text-center text-white countdown fadeIn animated wow"></div>
 		<br/>
 		<br/>
-		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg swing animated wow">Register Now!</button></a>
+		<a href="#register" class="smoothScroll"><button type="button" class="btn btn-primary btn-lg fadeInDown animated wow">Register Now!</button></a>
 	</div>
-	<div class="container">
-		<a class="anchor first"  name="about"></a>
+	<div class="container-fluid">
+		<a class="anchor first" name="about"></a>
 		<div class="row justify-content-center">
 			<div class="col-md-6 deadCenter text">
 				<img class="img-fluid fadeInUp zoomIn animated wow" src="img/hillshacks circuit 1.png" width="350">
@@ -94,7 +99,7 @@
                 <p><i>If you are not redirected to the google form, you may need to clear cached images and files in your browsing data. If still unable to access the form, use this link to be able to access the form directly: </i><a href = "https://docs.google.com/forms/d/e/1FAIpQLSc6D_04QPiWqdkqmXPbfJPULH9mucbqXhMtVrqCazGQ5hON5w/viewform?vc=0&c=0&w=1">Hackathon Google Form</a></p>
 
 			</div>
-			<div class="col-md-6 deadCenter text fadeInUp animated wow zoomIn">
+			<div class="col-md-4 deadCenter text fadeInUp animated wow zoomIn">
 				<img class="img-fluid" src="img/hillshacks circuit 2.png" width="150">
 			</div>
 		</div>
@@ -134,12 +139,13 @@
 				<div class="row justify-content-center">
 					<div class="col-md-10 text">
 						<p align = "center">
-							Click on any event to find out more! (Last updated 4/23)
+							Our schedule is still in the works. Check back soon and feel free to <a href="#contactUs" class="smoothScroll">contact us</a> if you have any questions.
 						</p>
 					</div>
-					<div class="table-responsive">
+          <!-- [IMPORTANT] Replace all "<!- -" and "- ->" with corresponding comments -->
+					<!--<div class="table-responsive">
 						<table class="table table-bordered" id="schedule">
-							<!--<thead>
+							<!- -<thead>
 								<th class="gold">Time</th>
 								<th class="gold">11:00</th>
 								<th class="gold">11:30</th>
@@ -155,7 +161,7 @@
 								<th class="gold">4:30</th>
 								<th class="gold">5:00</th>
 								<th class="gold">5:30</th>
-							</thead> -->
+							</thead> - ->
 							<tbody>
 								<tr>
 									<th class="gold text-center">11:00-11:30</th>
@@ -305,7 +311,7 @@
 										<div class="h5 card-body">Closings</div>
 									</td>
 								</tr>
-								<!--<tr>
+								<!- -<tr>
 									<td class="p-0 text-center">
 										<div class="card-header">Advanced</div>
 										<div class="h6 card-body">Learn F#!</div>
@@ -324,11 +330,11 @@
 										<div class="card-header">Fun</div>
 										<div class="h6 card-body">Make Games!</div>
 									</td>
-								</tr> -->
+								</tr> - ->
 
 							</tbody>
 						</table>
-					</div>
+					</div>-->
 				</div>
 
 				<!-- Modals – These are the popup windows to describe the workshops -->
@@ -898,19 +904,19 @@
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
-	new WOW().init();
+	  new WOW().init();
 	</script>
   <script>
     $(function () {
-		$('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
-      var $this = $(this).html(event.strftime(''
-        + '<span class="h1 font-weight-bold">%D</span> Days'
-        + '<span class="h1 font-weight-bold">%H</span> Hr'
-        + '<span class="h1 font-weight-bold">%M</span> Min'
-        + '<span class="h1 font-weight-bold">%S</span> Sec'));
+      $('#clock').countdown('2020/2/23').on('update.countdown', function(event) {
+        var $this = $(this).html(event.strftime(''
+          + '<span class="h1 font-weight-bold">%D</span> Days'
+          + '<span class="h1 font-weight-bold">%H</span> Hr'
+          + '<span class="h1 font-weight-bold">%M</span> Min'
+          + '<span class="h1 font-weight-bold">%S</span> Sec'));
+      });
     });
-});
-</script>
+  </script>
 	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
