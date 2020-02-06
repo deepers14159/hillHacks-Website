@@ -19,7 +19,7 @@ $(document).ready(function() {
     }, 500);
   });
     document.getElementById("register_button").onclick = function(event){
-		window.open('https://docs.google.com/forms/d/e/1FAIpQLSc6D_04QPiWqdkqmXPbfJPULH9mucbqXhMtVrqCazGQ5hON5w/viewform?vc=0&c=0&w=1', '_blank');
+		window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7IWauTmeMEYhx9r_T1frZmgSeq-B7zw0km2UfHAHORTX2qQ/viewform', '_blank');
         //window.alert("This function has yet to be added!");
     }
   function updateSlide(){
