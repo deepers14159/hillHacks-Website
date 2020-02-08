@@ -106,14 +106,14 @@ a:hover {
 }
 
 
-td[data-toggle="modal"] {
+/*td[data-toggle="modal"] {
 	cursor: pointer;
-}
+}*/
 .redText {
 	color: #FF0000
 }
 .advanced {
-	background-color: #FFB0B0;
+/*	background-color: #FFB0B0;*/
 }
 
 .navbar-toggler {
