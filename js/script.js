@@ -25,11 +25,7 @@ $(document).ready(function() {
   function updateSlide(){
     if ($(window).width() > 768) {
       if ($(window).scrollTop() < $(".first").offset().top - 1) {
-        $(".one").attr("class","one");
-        $(".two").attr("class","two");
-        $(".three").attr("class","three");
-        $(".four").attr("class","four");
-        $(".five").attr("class","five");
+	set_all_inactive();
         $("hr").css("display", "none")
         $("hr").attr("class","slide");
       } else if ($(window).scrollTop() < $(".second").offset().top - 1) {
@@ -56,11 +52,7 @@ $(document).ready(function() {
     } else {
       $("hr").css("display", "none")
       if ($(window).scrollTop() < $(".first").offset().top - 1) {
-        $(".one").attr("class","one");
-        $(".two").attr("class","two");
-        $(".three").attr("class","three");
-        $(".four").attr("class","four");
-        $(".five").attr("class","five");
+	set_all_inactive();
       } else if ($(window).scrollTop() < $(".second").offset().top - 1) {
         aboutActive();
       } else if ($(window).scrollTop() < $(".third").offset().top - 1) {
@@ -74,39 +66,32 @@ $(document).ready(function() {
       }
     }
   }
+
+  function set_all_inactive() {
+    var elements = ["one", "two", "three", "four", "five"];
+    elements.forEach(function(elem) {
+	    $("." + elem).attr("class", elem);
+    });
+  }
+	
+  function set_active(element) {
+    set_all_inactive();
+    $("." + element).attr("class", element + " active");
+  }
+	
   function aboutActive(){
-    $(".one").attr("class","one active");
-    $(".two").attr("class","two");
-    $(".three").attr("class","three");
-    $(".four").attr("class","four");
-    $(".five").attr("class","five");
+    set_active("one");
   }
   function registerActive(){
-    $(".one").attr("class","one");
-    $(".two").attr("class","two active");
-    $(".three").attr("class","three");
-    $(".four").attr("class","four");
-    $(".five").attr("class","five");
+    set_active("two");
   }
   function FAQActive(){
-    $(".one").attr("class","one");
-    $(".two").attr("class","two");
-    $(".three").attr("class","three active");
-    $(".four").attr("class","four");
-    $(".five").attr("class","five");
+    set_active("three");
   }
   function contactUsActive(){
-    $(".one").attr("class","one");
-    $(".two").attr("class","two");
-    $(".three").attr("class","three");
-    $(".four").attr("class","four active");
-    $(".five").attr("class","five");
+    set_active("four");
   }
   function scheduleActive(){
-    $(".one").attr("class","one");
-    $(".two").attr("class","two");
-    $(".three").attr("class","three");
-    $(".four").attr("class","four");
-    $(".five").attr("class","five active");
+    set_active("five");
   }
 });
