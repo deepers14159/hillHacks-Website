@@ -25,6 +25,9 @@
 			border-color: #FAD904 !important;
 			color: black !important;
 		}
+		.linkToWorkshop {
+			color: black !important;
+		}
 	</style>
 </head>
 
@@ -39,7 +42,7 @@
 			<span class="icon-bar bottom-bar"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mx-auto">
+			<ul class="navbar-nav  mx-auto">
 				<li class="nav-item one">
 					<a class="nav-link smoothScroll" href="#about">About</a>
 				</li>
@@ -67,7 +70,14 @@
 		<div id = "clock" class = "text-center text-white countdown fadeIn animated wow"></div>
 		<br/>
 		<br/>
-		<button id = "register_button" type="button" class="btn btn-primary btn-lg fadeInDown animated wow">Register Now!</button>
+	<div class = "row">
+		<div class = "col-4">
+		<button id = "register_button" type="button" class="btn btn-primary btn-lg fadeInDown animated wow">Register!</button>
+		</div>
+		<div class = "col-8">
+		<a class = "smoothScroll" href = "#schedule"><button type = "button" class = "btn btn-secondary btn-lg fadeInDown animated wow">See the schedule</button></a>
+		</div>	
+	</div>
 	</div>
 	<div class="container">
 		<a class="anchor first" name="about"></a>
@@ -78,11 +88,11 @@
 			</span>
 			</div>
 			<div class="col-md-6 text fadeInUp animated wow">
-				<h1 class=" display-4 mb-4 alignCenter adjustLeft">About</h1>
-				<p >hillsHacks is the third annual hackathon hosted by Watchung Hills! A hackathon is an event where a large number of people come together to explore and be inspired by computer science and technology.</p>
-				<p>Throughout the afternoon, beginners and experts alike can explore computer science through demos, talks, and workshops.  Learn how computer science is being applied to space exploration and medicine! Learn the basics of Python or JavaScript! Learn about the development process as high school students showcase their projects! <b>No prior experience is required.</b></p>
-				<p>Since the theme for hillsHacks 2020 is “Coding the Classroom”, at the end of the day, participants will be challenged to improve the classroom experience through innovative technological solutions. To conclude the event, everyone will have the opportunity to showcase what they’ve been working on in an informal sales pitch. While judges will select a few projects to win prizes, we would like to stress that prizes are not the main focus of the event, and are only meant to reward participants for their hard work.</p>
-				<p>The 2020 event will take place on <b>Sunday February 23rd, from 11:00 am to 6:00 pm</b>.</p>
+				<h1 class=" display-4 mb-4 alignCenter adjustLeft">Computer Science Is <u>Not</u> About Coding</h1>
+				<p>What’s a common thought about computer science? Computer science is HARD, it's BORING, it’s for NERDS who like typing a bunch of COMPLICATED SYMBOLS on their computers. But as it turns out, <i>NONE OF THESE  MISCONCEPTIONS</i> could be further than the truth! </p>
+				<p>CS is for INNOVATORS. For CREATORS. For PROBLEM SOLVERS. For people who want to make a DIFFERENCE in their communities.</p>
+				<p><i>Watchung Hill's 3rd annual hackathon is an event focused on more than learning how to code.</i></p>
+				<p>We intend to inspire attendees; they will see firsthand how musicians, chemists, and artists are using CS as a powerful tool.  Through our diverse selection of 12 <u>workshops</u>, including our <u>escape room</u>, participants will test their abilities to think creatively and work with a team. In our <u>design contest</u>, ideas to change the world will be celebrated and rewarded (with generous prizes!).</p>
 			</div>
 		</div>
 		<a class="anchor second" name="register"></a>
@@ -183,7 +193,7 @@
 									<th class="gold text-center">&nbsp;</th>
 									<td class="p-0 text-center" data-toggle="modal" data-target="#workshops" colspan="6">
 										<div class="h5 card-body">Workshops</div>
-										<p>Descriptions of each of the workshops are found below the schedule.</p>									</td>
+										<p>Click on any workshop to see a description.  Descriptions of all workshops are found below the schedule.</p>									</td>
 								</tr>
 								<tr>
 									<th class="gold text-center">&nbsp;</th>
@@ -211,14 +221,15 @@
 									<td class="p-0 text-center" >
 										<div class="h6 card-body" >Artificial Intelligence</div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#mcarbone">
-										<div class="h6 card-body">Matt Carbone</div>
+									<td class="p-0 text-center"  data-target="#mcarbone">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#introToBasicAlg">Intro to Basic Algorithms</a></div>
+
 									</td>
-									<td class="p-0 text-center" data-toggle="popover" data-target="javaintro">
-										<div class="h6 card-body">Introduction to Java</div>
+									<td class="p-0 text-center"  data-target="javaintro">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#introToJava">Intro to Java</a></div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#escaperoom">
-										<div class="h6 card-body">Escape Room</div>
+									<td class="p-0 text-center"  data-target="#escaperoomBody">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#escaperoomBody">Escape Room</a></div>
 									</td>
 									<!--<td class="p-0 text-center" data-toggle="modal" data-target="#space">
 										<div class="h6 card-body advanced">Coding in Space</div>
@@ -229,17 +240,18 @@
 								</tr>
 								<tr>
 									<th class="gold text-center">1:30-2:30</th>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#girlsWhoCode">
-										<div class="h6 card-body">Girls Who Code</div>
+									<td class="p-0 text-center"  data-target="#girlsWhoCode">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#womenInCS">Women in CS</a></div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#mcarbone">
-										<div class="h6 card-body">Matt Carbone</div>
+									<td class="p-0 text-center" data-target="#mcarbone">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#myStory">My Story: From Chem to Machine Learning</a></div>
+
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#videoGameDesign">
+									<td class="p-0 text-center"  data-target="#videoGameDesign">
 										<div class="h6 card-body">Video Game Design</div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal"  data-target="#escaperoom">
-										<div class="h6 card-body advanced">Escape Room</div>
+									<td class="p-0 text-center"  data-target="#escaperoom">
+										<div class="h6 card-body advanced"><a class = "smoothScroll linkToWorkshop" href = "#escaperoomBody">Escape Room</a></div>
 									</td>
 									<!--<td class="p-0 text-center" data-toggle="modal" data-target="#webdev">
 										<div class="h6 card-body advanced">Intro to Functional Programming</div>
@@ -254,13 +266,13 @@
 										<div class="h6 card-body">Data Science</div>
 									</td>
 									<td class="p-0 text-center" data-toggle="modal" data-target="#lamson">
-										<div class="h6 card-body">Mr. Lamson</div>
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#designSpace">Design Space</a></div>
 									</td>
 									<td class="p-0 text-center" data-toggle="modal" data-target="#problemSolving">
-										<div class="h6 card-body">Problem Solving with CS</div>
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#problemSolvingWithCS">Problem Solving with CS</a></div>
 									</td>
 									<td class="p-0 text-center" data-toggle="modal" data-target="#escaperoom">
-										<div class="h6 card-body advanced">Escape Room</div>
+										<div class="h6 card-body advanced"><a class = "smoothScroll linkToWorkshop" href = "#escaperoomBody">Escape Room</a></div>
 									</td>
 									<!--<td class="p-0 text-center" data-toggle="modal" data-target="#whycsisimportant">
 										<div class="h6 card-body advanced">Music + Coding</div>
@@ -271,17 +283,17 @@
 								</tr>
 								<tr>
 									<th class="gold text-center">3:30-4:30</th>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#musicAndCoding">
-										<div class="h6 card-body">Music + Coding</div>
+									<td class="p-0 text-center"  data-target="#musicAndCoding">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#musicAndCoding">Music + Coding</a></div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#presentationSkills">
+									<td class="p-0 text-center"  data-target="#presentationSkills">
 										<div class="h6 card-body advanced">Presentation Skills</div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#introToFunctionalProgramming">
-										<div class="h6 card-body">Intro to Functional Programming</div>
+									<td class="p-0 text-center"  data-target="#introToFunctionalProgramming">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#functionalProgramming">Intro to Functional Programming</a></div>
 									</td>
-									<td class="p-0 text-center" data-toggle="modal" data-target="#escaperoom">
-										<div class="h6 card-body">Escape Room</div>
+									<td class="p-0 text-center"  data-target="#escaperoom">
+										<div class="h6 card-body"><a class = "smoothScroll linkToWorkshop" href = "#escaperoomBody">Escape Room</a></div>
 									</td>
 									<!--<td class="p-0 text-center" data-toggle="modal" data-target="#latexandmath">
 										<div class="h6 card-body advanced">LaTeX and Math</div>
@@ -906,13 +918,15 @@
 						<h4> Schedule Visualization </h4>
 						<img class="img-fluid" src="img/hillshacks schedule.png" width="1000">
 				</div>-->
+				<a class = "anchor" name = "escaperoomBody"></a><BR>
 				<div class="card aniamted wow zoomIn">
-					<div class="card-body">
+				<div class="card-body" >
 						<h5 class="card-title">Escape Room</h5>
 						<h6 class="card-subtitle mb-2 text-muted">Led by Jagdeep Bhatia</h6>
 						<p class = "card-text">Computer science is not all about coding (trust me - coding is the easy part!) Rather, strong computer scientists have great teamwork and problem-solving skills, and can “think outside the box”. For this escape room, you’ll have 50 minutes to search c0mrade’s office (he’s an evil hacker), break into his computer, and secure the evidence of his latest hacking crimes all before c0mrade comes back from his lunch break. Good luck solving the puzzles and have fun! Note: Max 8 people per room. Registration on a first-come-first-serve basis on day of event.</p>
 					</div>
-				</div><br>
+				</div>
+				<a class = "anchor" name = "functionalProgramming"></a><br>
 				<div class="card aniamted wow zoomIn">
 					<div class="card-body">
 						<h5 class="card-title">Introduction to Functional Programming</h5>
@@ -920,26 +934,65 @@
 						<p class = "card-text">If you began learning to code with a language like Python, C++, or Java, you’ve been using the “imperative programming” paradigm whether you realize it or not. But did you know there are other ways to construct programs? Namely, “functional programming”! Functional programming (FP) is deeply rooted in the foundations of computer science way back in the 1950s, and to this day it remains an essential tool for the CS field. This workshop will expose you to the principles and uses of FP with some simple coding in the Scheme programming language, offering a different perspective on programming from the usual introductory CS curriculum.
 						</p>
 					</div>
-				</div><br>
+				</div>
+				<a class = "anchor" name = "introToJava"></a><br>
 				<div class="card aniamted wow zoomIn">
 					<div class="card-body">
 						<h5 class="card-title">Introduction to Java</h5>
 						<h6 class="card-subtitle mb-2 text-muted">Led by Jay Fu and Bryan Shangguan</h6>
-						<p class = "card-text">Java is one of the most widely used programming languages.  It is used in mobile apps, web applications, and in GUI (graphical user interface) applications. In this beginner’s workshop, you will learn the basic fundamentals of Java including Strings, variables, output statements, and arithemtic operators.  There will be challenges and exercises throughout the workshop that will help make learning Java interactive and fun.  
+						<p class = "card-text">Java is one of the most widely used programming languages.  It is used in mobile apps, web applications, and in GUI (graphical user interface) applications. In this beginner’s workshop, you will learn the basic fundamentals of Java including Strings, variables, output statements, if statements, Scanner input, and arithemtic operators.  There will be challenges and exercises throughout the workshop that will help make learning Java interactive and fun.  
 						</p>
 					</div>
-				</div><br>
+				</div>
+				<a class = "anchor" name = "problemSolvingWithCS"></a><br>
 				<div class="card aniamted wow zoomIn">
 					<div class="card-body">
 						<h5 class="card-title">Problem Solving with CS</h5>
 						<h6 class="card-subtitle mb-2 text-muted">Led by Mayur Sharma</h6>
 						<p class = "card-text">As humans, we use games like Tic Tac Toe, Checkers, Sudoku, Chess, and Go to pass the time or compete against one another. But how do computers interpret these games and learn 'strategy'? This workshop will focus on algorithms used to solve these problems and present different methods of systematically solving complex problems.</p>
 					</div>
-				</div><br>
+				</div><a class = "anchor" name = "musicAndCoding"></a><br>
+				<div class="card aniamted wow zoomIn">
+					<div class="card-body">
+						<h5 class="card-title">Music + Coding</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Led by Mariam Contractor</h6>
+						<p class = "card-text">Composing and creating music of all kinds through coding is a beautiful way to bridge music and computer science together. In this workshop, we’ll be focusing on coding and music at simple levels, with no music nor coding experience required, using websites like Scratch, which allow you to upload sounds at specific intervals and beats. However, you’ll also be learning about how much this music grows with the introduction of machine learning. This workshop connects two seemingly opposite ends of the spectrum, and you’ll learn about the inevitable future of music. 					</div>
+				</div>
+				<a class = "anchor" name = "womenInCS"></a><br>
+				<div class="card aniamted wow zoomIn">
+					<div class="card-body">
+						<h5 class="card-title">Women in CS</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Led by Mariam Contractor</h6>
+						<p class = "card-text">Computer science is a relatively recent field that truly got started in the latter half of the twentieth century. As more and more students decide to pursue C.S., there seems to be a notable lack of the majority of the world’s population: women. Women only earned 18% of all computer science degrees in 2015, and that’s only the first of many eye-opening statistics that display the gender disparity in computer science. This workshop is geared towards any computer science learner--from beginner to master coder--and how to crack the code (pun intended) on engaging more women in computer science. 
+						</div>
+			</div>
+			<a class = "anchor" name = "introToBasicAlg"></a><br>
+				<div class="card aniamted wow zoomIn">
+					<div class="card-body">
+						<h5 class="card-title">Introduction to Basic Algorithms: Unraveling Fibonacci Numbers</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Led by Matt Carbone</h6>
+						<p class = "card-text">Central to computer science is the algorithm, which can be simply defined as a set of rules to be followed during a calculation. They form the foundation of essentially all of the technological infrastructure you use in your everyday life, and if you want to study computer science, you will need to master them. In this workshop, I will demonstrate and explain a variety of algorithms used to compute Fibonacci numbers (and there are a ton of them). We will also cover a variety of important related concepts, like computational complexity, which are key to any computer science degree in college.
+						</div>
+			</div>
+			<a class = "anchor" name = "myStory"></a><br>
+				<div class="card aniamted wow zoomIn">
+					<div class="card-body">
+						<h5 class="card-title">My Story: From Chemistry to Machine Learning</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Led by Matt Carbone</h6>
+						<p class = "card-text">I will talk about my journey from WHRHS to graduate a student at Columbia. Many students, if they are like me, at least, probably believe that the learning curve is too steep to get into coding professionally. It might be helpful to hear that I have not had a formal CS/coding education, and how I got to the point where I am fluent in Python, C and C++, understand how to write distributable software, and how I self-taught myself machine learning. This will be code-lite and could serve more like a discussion than anything else. It’ll be a chance to really have a discussion. I want people to know that if they want to do science, computer science or anything in between, they certainly can regardless of their current experience level.
+						</div>
+			</div>
+			<a class = "anchor" name = "designSpace"></a><br>
+				<div class="card aniamted wow zoomIn">
+					<div class="card-body">
+						<h5 class="card-title">Design Space</h5>
+						<p class = "card-text">This is a place where you can get started on your design project for the HillsHacks design contest early.  Daniel Lamson, a member of the WHRHS computer science faculty, will be available to help anyone on their design project.   						
+
+						</div>
 			</div>
 		</div></div>
-		<div class="containter-fluid row footer justify-content-center darkgray">
-			<div class="col-md-10 text whiteText alignCenter">
+		<div class="container-fluid row footer justify-content-center darkgray">
+			<div class="text whiteText alignCenter">
 				<p>&#169; Copyright 2020 Watchung Hills Regional High School Computer Science Club</p>
 			</div>
 		</div>
